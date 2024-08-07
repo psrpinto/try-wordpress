@@ -7,6 +7,7 @@ let run = (cmd) => {
 
 let browser = process.argv.slice(2)[0];
 
+run(`cp -r src/icons ${browser}/`);
 run(`wp-scripts build --webpack-src-dir=src/background --output-path=${browser}/background`);
 run(`wp-scripts build --webpack-src-dir=src/content --output-path=${browser}/content`);
 run(`cp -r src/sidebar ${browser}/`);
