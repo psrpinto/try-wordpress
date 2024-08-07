@@ -1,6 +1,6 @@
 {
 	"scripts": {
-		"build": "node scripts/build.js firefox && node scripts/build.js chrome",
+		"build": "node build/build.js firefox && node build/build.js chrome",
 		"start-chrome:content": "wp-scripts start --webpack-src-dir=src/content --output-path=chrome/content",
 		"start-chrome:wp-plugin": "wp-scripts start --webpack-src-dir=src/wp-plugin --output-path=chrome/wp-plugin",
 		"start-chrome:background": "wp-scripts start --webpack-src-dir=src/background --output-path=chrome/background",
